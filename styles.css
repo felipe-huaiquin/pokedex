@@ -1,3 +1,7 @@
 .box{
     vertical-align: top;
 }
+
+.image-centered{
+    justify-content: center;
+}
