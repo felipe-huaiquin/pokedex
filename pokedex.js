@@ -28,16 +28,14 @@ $(document).ready(function(){
                 $('div.content').html("<div class='has-text-centered'><strong>"+Capitalization(res.species.name)+"</strong></div>");
                 $('div.content').append("<img class='image-centered' src='http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/" + pkmn_number + ".png' >")
                 if(res.types.length==1){
-                    $('div.content').append("<div class='has-text-centered'><p>"+res.types[0].type.name+"</p></div>")
+                    $('div.content').append("<div class='has-text-centered'><img class='image-centered' src='pkmn_types/"+res.types[0].type.name+".gif'></div>")
                 }else{
-                    $('div.content').append("<div class='has-text-centered'><p>"+res.types[0].type.name+"</p></div>")
-                    $('div.content').append("<div class='has-text-centered'><p>"+res.types[1].type.name+"</p></div>")
+                    $('div.content').append("<div class='type1'><img class='type-centered' src='pkmn_types/"+res.types[0].type.name+".gif'></div>")
+                    $('div.content').append("<div class='type2'><img class='type-centered' src='pkmn_types/"+res.types[1].type.name+".gif'></div>")
                 }
                 $('div.content').append("<div class='has-text-centered'><p>"+res.height+"</p></div>")
                 $('div.content').append("<div class='has-text-centered'><p>"+res.weight+"</p></div>")
             },"json");
-
-            
     });
 });
 

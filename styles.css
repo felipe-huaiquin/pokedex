@@ -3,5 +3,13 @@
 }
 
 .image-centered{
-    justify-content: center;
+    margin: 0px auto;
+    display: block;
+}
+
+.type-centered{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
